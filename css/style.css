@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #def1fc;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  height: calc(100vh - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  width: 70vw;
+  max-width: 37vh;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.btn-personalizado {
+  width: 100%;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  padding: 16px;
+}
+
+.div-personalizada {
+  width: 80vw;
+  max-width: 45vh;
+}
+
+#div-botoes {
+  margin-top: 64px;
+  width: calc(70vw + 80px);
+  max-width: calc(40vh + 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#titulo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  margin: 70px 0px 16px 0px;
+}
+
+#paragrafo {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#btn-entrar {
+  background-color: #205deb;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#btn-criar-conta {
+  border: 1px solid #747474;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+#form-login {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px;
+  border-radius: 16px;
+  border: 1px solid #d8dadc;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+#bem-vindo {
+  align-self: flex-start;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+#campo-email {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#campo-nome label,
+#campo-email label,
+#campo-senha label,
+#campo-confirmar-senha label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#campo-nome input,
+#campo-confirmar-senha input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+#email {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+}
+
+#campo-senha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#container-senha {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  background: white;
+}
+
+#container-senha input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#container-senha i {
+  width: 24px;
+  cursor: pointer;
+}
+
+.olhoSenhaRiscado {
+  margin-right: 2px;
+}
+
+.olhoSenha {
+  margin: 0px 1px;
+}
+
+#entrar {
+  cursor: pointer;
+  background-color: #205deb;
+  border-radius: 10px;
+  padding: 18px;
+  width: 353px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#entrar:hover {
+  background-color: #1a4dbb;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox label {
+  height: 21px;
+  width: 21px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.checkbox label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 4px;
+  width: 8px;
+  top: 6px;
+  left: 5px;
+  opacity: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.checkbox input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checkbox input[type="checkbox"]:checked+label {
+  background-color: #205deb;
+  border-color: #205deb;
+}
+
+.checkbox input[type="checkbox"]:checked+label:after {
+  opacity: 1;
+}
+
+#div-ou-com {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.linha-ou-com {
+  height: 0px;
+  width: 37%;
+  border: 1px solid #d8dadc;
+}
+
+#ou-com {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#lembrar-de-mim {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#lembrar-de-mim p {
+  cursor: default;
+  margin-top: 1px;
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+#esqueceu-sua-senha {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#esqueceu-sua-senha:hover {
+  text-decoration: underline;
+}
+
+#botoes-login {
+  margin-top: 22px;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+#botoes-login button {
+  border: 1px solid #d8dadc;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#botoes-login button:hover {
+  background-color: #f5f5f5;
+}
+
+#facebook {
+  padding: 18px 36px;
+}
+
+#google {
+  padding: 18px 45px;
+}
+
+#secao-cadastrar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #d8dadc;
+  background-color: #fff;
+  margin-bottom: 16px;
+}
+
+#secao-cadastrar p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#cadastrar {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sublinhado {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #000;
+  margin-left: 0.5px;
+}
+
+#div-cadastrar {
+  margin-left: 4px;
+}
+
+#secao-login {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+#contorno-section-principal {
+  border: none;
+  border-radius: 10px;
+  padding: 26px;
+}
+
+#campo-nome,
+#campo-email,
+#campo-senha,
+#campo-confirmar-senha,
+#termos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+#termos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#termos label {
+  font-size: 14px;
+}
+
+#termos input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 525px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #secao-login {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  #form-login,
+  #secao-cadastrar {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 16px;
+    margin: 0;
+    width: 100vw;
+  }
+
+  #form-login {
+    height: 80vh;
+  }
+
+  #entrar {
+    width: 100%;
+  }
+
+  .container {
+    width: calc(100vw - 32px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #ou-com {
+    min-width: 59px;
+  }
+
+  #div-ou-com {
+    width: calc(100vw - 32px);
+  }
+
+  .linha-ou-com {
+    width: 100%;
+  }
+
+  #facebook, #google {
+    width: 50vw;
+    justify-content: center;
+  }
+
+  #logo {
+    width: 70vw;
+    max-width: 37vh;
+  }
+}
+
+@media (min-width: 525px) {
+  main {
+    height: 100vh;
+    align-items: center;
+  }
+
+  #secao-cadastrar {
+    margin: 0;
+  }
+}
+
+@media (min-width: 860px) {
+  #contorno-section-principal {
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #div-botoes {
+    display: none;
+  }
+
+  #espaco {
+    max-width: 100px;
+    width: 10vw;
+  }
+
+  #form-login {
+    display: flex;
+  }
+
+  #secao-cadastrar {
+    display: flex;
+  }
+}
+
+.campo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container .input {
+  flex: 1;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn img {
+  margin-right: 8px;
+}

@@ -20,16 +20,16 @@
                 <div id="paragrafo">Limpe seu nome e controle suas</div>
                 <div id="paragrafo">dívidas em um só lugar</div>
                 </p>
-                <div id="div-botoes">
-                    <button class="btn-personalizado" id="btn-entrar">Entrar</button>
-                    <button class="btn-personalizado" id="btn-criar-conta">Criar conta</button>
-                </div>
             </section>
         </div>
         <div id="espaco"></div>
         <section id="secao-login">
             <form id="form-login">
-                <h1 id="bem-vindo">Bem-vindo! 👋</h1>
+                <h1 id="bem-vindo">Criar conta</h1>
+                <div id="campo-nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome">
+                </div>
                 <div id="campo-email">
                     <label for="email">E-mail</label>
                     <input type="email" id="email" placeholder="Seu e-mail">
@@ -41,37 +41,19 @@
                         <i class="fa-solid fa-eye" id="olhoSenha"></i>
                     </div>
                 </div>
-                <div>
-                    <div class="container">
-                        <div id="lembrar-de-mim">
-                            <div class="checkbox">
-                                <input type="checkbox" checked id="checkbox" />
-                                <label for="checkbox"></label>
-                            </div>
-                            <p>Lembrar de mim</p>
-                        </div>
-                        <a href="#" id="esqueceu-sua-senha">Esqueceu sua senha?</a>
+                <div id="campo-confirmar-senha">
+                    <label for="confirmar-senha">Confirmar Senha</label>
+                    <div id="container-senha">
+                        <input type="password" id="confirmar-senha" placeholder="Confirme sua senha">
+                        <i class="fa-solid fa-eye" id="olhoSenha"></i>
                     </div>
-                    <button for="form-login" type="submit" id="entrar">Entrar</button>
                 </div>
-                <div id="div-ou-com">
-                    <div class="linha-ou-com"></div>
-                    <p id="ou-com">Ou com</p>
-                    <div class="linha-ou-com"></div>
-                </div>
-                <div id="botoes-login">
-                    <button id="facebook">
-                        <img src="../assets/facebook.svg" alt="Logo Facebook">Facebook
-                    </button>
-                    <button id="google">
-                        <img src="../assets/google.svg" alt="Logo Google">Google
-                    </button>
-                </div>
+                <button for="form-login" type="submit" id="entrar">Cadastrar</button>
             </form>
             <section id="secao-cadastrar">
-                <p>Ainda não tem uma conta?
+                <p>Já tem uma conta?
                 <div id="div-cadastrar">
-                    <a id="cadastrar" href="./cadastro.html">Cadastrar</a>
+                    <a id="cadastrar">Entrar</a>
                     <div id="sublinhado"></div>
                 </div>
                 </p>
